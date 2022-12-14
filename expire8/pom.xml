@@ -4,18 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>expire</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>expire3</module>
-        <module>expire4</module>
-        <module>expire5</module>
-        <module>expire6</module>
-        <module>expire7</module>
-        <module>expire8</module>
-    </modules>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>expire8</artifactId>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
