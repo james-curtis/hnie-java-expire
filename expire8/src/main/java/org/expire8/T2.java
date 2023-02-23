@@ -1,5 +1,7 @@
 package org.expire8;
 
+import java.util.Random;
+
 public class T2 implements Runnable {
 
     static Integer count = 0;
@@ -15,12 +17,12 @@ public class T2 implements Runnable {
     public void run() {
         while (true) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(new Random().nextInt(1000));
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
             synchronized (T2.LOCK) {
-                System.out.println("%s count:%d".formatted(Thread.currentThread().getName(), T2.count++));
+                System.out.printf("%s count:%d\n", Thread.currentThread().getName(), T2.count++);
             }
         }
     }
